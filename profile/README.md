@@ -1,8 +1,8 @@
-# AgroMotion - Sistema Automatizado de Alimentação Animal
+# Agromotion - Sistema Automatizado de Alimentação Animal
 
 Este projeto foi desenvolvido como **Projeto Final de Curso** no âmbito da Licenciatura em **Engenharia de Sistemas Informáticos (Regime Pós-Laboral)** no **IPCA (Instituto Politécnico do Cávado e do Ave)**.
 
-**AgroMotion** é uma solução IoT (Internet of Things) integrada que permite o agendamento, gestão e monitorização remota de um sistema de alimentação automatizado para animais.
+**Agromotion** é uma solução IoT (Internet of Things) integrada que permite o agendamento, gestão e monitorização remota de um sistema de alimentação automatizado para animais.
 
 ---
 
@@ -11,19 +11,15 @@ Este projeto foi desenvolvido como **Projeto Final de Curso** no âmbito da Lice
 O projeto é composto por:
 
 ### 1. Sistema Embebido (Robô)
-* **TODO**
+
   
-### 2. Aplicação (Plataforma de Controlo)
+### 2. Aplicação
 Interface de utilizador para controlo total do sistema.
 * **Gestão de Horários:** Interface para criar, editar e alternar estados de alimentação.
 * **Notificações Push:** Sistema de alertas via Firebase Cloud Messaging (FCM) para manter o utilizador informado sobre a atividade do robô.
 * **Plataformas Suportadas:** Android, IOS, MacOS, Linux, Windows.
 
-### 3. Infraestrutura Cloud
-Ponto central de comunicação e persistência de dados.
-* **Realtime Database:** Sincronização instantânea entre App e Robô.
-* **Authentication:** Acesso seguro via Google Sign-In / E-Mail e Password.
-* **Cloud Messaging:** Gestão de notificações via API v1 com autenticação OAuth2.
+### 3. Website
 
 ---
 
