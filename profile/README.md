@@ -1,60 +1,58 @@
-# Agromotion - Sistema Automatizado de Alimentação Animal
+# Agromotion: Sistema Automatizado de Alimentação Animal
 
-Este projeto foi desenvolvido como **Projeto Final de Curso** no âmbito da Licenciatura em **Engenharia de Sistemas Informáticos (Regime Pós-Laboral)** no **IPCA (Instituto Politécnico do Cávado e do Ave)**.
+O **Agromotion** é um ecossistema IoT (Internet of Things) desenvolvido como **Projetos Finais de Curso** da Licenciatura em **Engenharia de Sistemas Informáticos** (IPCA). A solução permite o agendamento, gestão e monitorização remota de um alimentador animal inteligente, unindo hardware robusto a uma interface intuitiva.
 
-**Agromotion** é uma solução IoT (Internet of Things) integrada que permite o agendamento, gestão e monitorização remota de um sistema de alimentação automatizado para animais.
+*Nota: Apesar de ser o mesmo ecossistema, o projeto é dividido em **dois projetos diferentes** que se complementam numa solução final.*
+
+<p align="center">
+  <img src="logo_w_512.png" alt="Agromotion logo" width="175" style =  >
+</p>
 
 ---
 
 ## Estrutura do Ecossistema
 
-O projeto é composto por:
+O projeto divide-se em três pilares fundamentais, cada um com o seu repositório dedicado:
 
-### 1. Sistema Embebido (Robô)
+### 1. [Agromotion Robot](https://github.com/Agromotion/agromotion-robot)
+O hardware do projeto. Um sistema embebido capaz de processar comandos e executar a alimentação a animais.
+* **Hardware:** Baseado em Arduino e Raspberry Pi.
+* **Funcionalidades:** Ativação de motores de precisão, câmara e comunicação em tempo real.
 
-  
-### 2. Aplicação
-Interface de utilizador para controlo total do sistema.
-* **Gestão de Horários:** Interface para criar, editar e alternar estados de alimentação.
-* **Notificações Push:** Sistema de alertas via Firebase Cloud Messaging (FCM) para manter o utilizador informado sobre a atividade do robô.
-* **Plataformas Suportadas:** Android, IOS, MacOS, Linux, Windows.
+### 2. [Agromotion App](https://github.com/Agromotion/agromotion-app)
+A central de comando do utilizador, desenvolvida para ser verdadeiramente multiplataforma.
+* **Gestão:** Agendamento de horários e controlo manual do alimentador.
+* **Cloud:** Integração com Firebase para sincronização de dados e notificações push (FCM).
+* **Suporte:** Android, iOS, Windows.
 
-### 3. Website
-
----
-
-## Stack Tecnológica
-
-* **Linguagens:** Dart (Flutter), C++ (Arduino/ESP32).
-* **Frameworks:** Flutter, Firebase SDK.
-* **Protocolos:** WebSockets (Realtime DB), HTTPS, OAuth2.
-* **Segurança:** Gestão de Service Accounts para envio de notificações e proteção de chaves VAPID.
+### 3. [Agromotion Website](https://github.com/Agromotion/agromotion-web)
+A montra digital do projeto. Um portal informativo que detalha a visão, os objetivos e os resultados alcançados pelo Agromotion.
 
 ---
 
-## Funcionalidades Principais
+## Equipa e Responsabilidades
 
-* **Sincronização em Tempo Real:** Alterações na App refletem-se no robô instantaneamente.
-* **Sistema de Notificações:** Notificações disparadas automaticamente quando um horário é alterado ou uma tarefa concluída.
-* **Interface Adaptativa:** Suporte para diferentes temas e design responsivo para diferentes dispositivos.
-* **Segurança de Acesso:** Login social via Google, e-mail e palavra-passe.
+O projeto foi concebido por dois estudantes, dividindo o trabalho entre duas camadas: Hardware (Firmware) e Software (Application/Cloud):
 
----
+| Desenvolvedor | Foco Principal | Responsabilidades |
+| :--- | :--- | :--- |
+| **Júlio Faria** | **Firmware & Hardware** | Construção física do robô, eletrónica, lógica de controlo em Arduino/Raspberry Pi. |
+| **Miguel Areal** | **Software & Backend** | Desenvolvimento da App, arquitetura Firebase e integração App-Robô. |
 
-## Compilação e Execução
-
-### App (Flutter)
-1. Instalar dependências: `flutter pub get`
-2. Configurar assets: Adicionar `service-account.json` em `assets/`.
-3. Configurar .env: Adicionar `env.dart` em `lib/config`.
-4. Executar: `flutter run`
-
+*Ambos colaboraram no desenvolvimento e design do **Website Informativo**.*
 
 ---
 
-## Autores e Instituição
+## Tecnologias
 
-* **Instituição:** IPCA - Instituto Politécnico do Cávado e do Ave
-* **Curso:** Engenharia de Sistemas Informáticos (Pós-Laboral)
-* **Projeto:** Projeto Final de Curso
-* **Desenvolvido por:** Miguel Areal, Júlio Faria
+* **Linguagens:** Dart, C++, Python, Javascript.
+* **Infraestrutura:** Firebase (Auth, Firestore, Messaging).
+* **Hardware:** Sensores IoT, Motores, Microcontroladores, Câmara.
+
+---
+
+## Contexto Académico
+* **Instituição:** [IPCA](https://www.ipca.pt) - Instituto Politécnico do Cávado e do Ave
+* **Curso:** Engenharia de Sistemas Informáticos (Regime Pós-Laboral)
+* **Unidade Curricular:** Projeto Final de Curso
+* **Ano Letivo:** 2025-2026
